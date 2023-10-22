@@ -1,0 +1,114 @@
+/*ini adalah comment*/
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+img {
+    width: 20%; /*ukuran gambar*/
+   
+}
+
+/*paragraf*/
+p {
+    background-color: rgba(220, 213, 213, 0.959);
+    color: black;
+    font-family: 'Franklin Gothic';
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+ul {
+    padding-left: 64px;
+    color: black;
+    font-family: 'Franklin Gothic';
+}
+
+/*link*/
+a {
+    color: rgba(220, 213, 213, 0.959);
+}
+
+table {
+    padding-left: 10px;
+    width: 20%;
+    border-left: 2px solid rgb(255, 119, 81);
+    margin-left: 12px;
+    font-family: 'Franklin Gothic';
+}
+
+
+.wrapper-content {
+    background: rgba(220, 213, 213, 0.959);
+    text-align: center;
+    color: black;
+    
+}
+
+/*class*/
+.pback {
+    border-radius: 10px;
+    background-color: rgb(255, 119, 81);
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+.back {
+    background-image: url(Images/bulan.jpg);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 40%;
+    background-attachment: fixed;
+}
+
+.head {
+    border-radius: 10px;
+    background-color: rgb(255, 119, 81);
+    color: white;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.head2 {
+   background-color: rgba(220, 213, 213, 0.959);
+    color:white;
+    background: rgb(48, 40, 40);
+    text-align: center;
+}
+
+.par {
+    background-color: rgb(48, 40, 40);
+    color: rgba(239, 232, 232, 0.959);
+    padding-top: 0;
+    padding-left: 10px;
+    border-left: 2px solid rgb(255, 119, 81);
+    margin-left: 12px;
+}
+
+.wrapper-list {
+    background-color: rgb(48, 40, 40);
+
+}
+
+.kel {
+    background-color: rgb(48, 40, 40);
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 1%;
+    text-align: left;
+    border: 2px solid rgb(255, 119, 81);
+}
