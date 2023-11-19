@@ -1,0 +1,63 @@
+Penjelasan singkat mengenai codingan yang sudah tertera
+<-------------->
+
+<-------------->
+File file yang ada tidak dirubah, namun ada beberapa folder dan file tambahan. Dengan alasan karena tombol pada menu
+navigasi bisa berfungsi ketika tombol diklik dan bisa berpindah halaman sesuai dengan tombol yang diklik.
+
+Terdapat folder "Pages" yang berisikan file file HTML yang mengandung kode untuk menampilkan interface halaman lain.
+File CSS dan JS hanya dibuat masing-masing 1, tapi itu sudah mencakup semua halaman interface.
+
+Untuk mengetahui bagian mana saja CSS dari suatu elemen atau bagian, Anda dapat melihatnya melalui "Tulisan Komentar"
+yang ditulis sebelum dan sesudah kode itu di buat.
+
+Contoh:
+(Kode CSS untuk tampilan navbar)
+/* Navbar CSS */
+.navbar {
+    padding: 1rem 5%;
+    text-align: center;
+}
+/* Navbar CSS */
+
+Terdapat lebih dari 1000 baris untuk kode CSS yang mencakup semua halaman.
+
+<-------------->
+
+File JS mencakup tiga buah fungsi: fungsi waktu(), fungsi kanan(), dan fungsi kiri().
+
+waktu() = berfungsi untuk menampilkan waktu secara real time.
+kanan() = berfungsi untuk mengubah tampilan konten pada jumbotron yang ada pada file UTS.html (Menjadi : Jasa Layanan Energi)
+kiri() = berfungsi untuk mengubah tampilan konten pada jumbotron yang ada pada file UTS.html (Menjadi : Infrsstruktur Energi)
+
+<-------------->
+
+Pada setiap halaman html yang ada, telah diberikan beberapa catatan untuk setiap bagiannya, berguna untuk mengetahui
+kode itu digunakan untuk membuat tampilan apa.
+
+Contoh:
+<!-- Logo Start -->
+    <div class="navbars-logo">
+        <a href="UTS.html">
+            <img src="Images_UTS/logo.jpeg" alt="">
+        </a>
+    </div>
+<!-- Logo End -->
+
+Pada contoh di atas menunjukan bahwa kode tersebut digunakan untuk menampilkan foto logo dalam menu navigasi.
+Untuk semua kode dan elemen telah diberikan hal yang sama, maka Anda hanya perlu memperhatikan dan mempelajari
+bagaimana kode ini digunakan dan apa saja yang digunakan untuk menampilkan tampilan pada halaman interface aplikasi.
+
+<-------------->
+
+Untuk foto yang tertera pada sidebar dan cards content berita, silahkan untuk mengganti sendiri karena ketidaktahuan
+dalam menggunakan yang seperti apa dan foto yang bagaimana.
+
+<-------------->
+
+Link untuk mengakses sosial media pada footer belum dimasukkan link akses, karena ketidaktahuan sosial media yang digunakan.
+
+Note*:
+Jika bingung dan ada yang ditanyakan, boleh untuk langsung menghubungi kontak yang bersangkutan. Terima kasih.
+
+Semoga UTS nya berjalan dengan lancar~~~
