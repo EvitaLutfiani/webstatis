@@ -1,0 +1,1786 @@
+/* CSS persiapan untuk interface website */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Images_UTS/white2.1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar CSS */
+.navbars {
+    padding: .5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    background-color: white;
+    z-index: 9999;
+}
+
+.navbars .navbars-logo {
+    max-width: 5rem;
+    flex: 1 1 2rem;
+}
+
+.navbars .navbars-logo a img {
+    width: 100%;
+}
+
+.navbars .navbars-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbars .navbars-nav .aktif {
+    padding: .5rem 1rem 0;
+    border-radius: .3rem;
+    background-color: rgb(62, 18, 18);
+    color: white;
+}
+
+.navbars .navbars-nav .drop-aktif {
+    border-radius: .3rem;
+    background-color: rgb(88, 31, 31);
+    color: white;
+}
+
+.navbars .navbars-nav .drop ul .drop-aktif a {
+    color: white;
+}
+
+.navbars .navbars-nav .nav-aktif {
+    padding: 0 0 .4rem;
+    border-bottom: 3px solid  rgb(248, 214, 182);
+}
+
+.navbars .navbars-nav .aktif:hover {
+    background-color: rgb(145, 51, 51);
+}
+
+.navbars .navbars-nav .aktif:hover::after {
+    border-bottom: none;
+}
+
+.navbars .navbars-nav a {
+    margin: 0 1rem;
+    padding: .5rem 0 0;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbars .navbars-nav a::after {
+    content: "";
+    padding: .2rem;
+    display: block;
+    border-bottom: 3px solid  rgb(248, 214, 182);
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.navbars .navbars-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Hamburger Menu Button CSS */
+.navbars .navbars-extra {
+    display: none;
+}   
+/* Hamburger Menu Button CSS */
+
+/* Dropdown List CSS */
+.navbars .navbars-nav .drop {
+    margin: .5rem 0 0;
+    padding: .5rem 1rem;
+    text-align: center;
+    z-index: 9998;
+}
+
+.navbars .navbars-nav .drop a {
+    margin: 0;
+}
+
+.navbars .navbars-nav .drop a::after {
+    content: "";
+    padding: .2rem;
+    display: block;
+    border-bottom: 3px solid  rgb(248, 214, 182);
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.navbars .navbars-nav .drop a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbars .navbars-nav .drop ul {
+    margin: .5rem 1.5rem 0;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    list-style-type: none;
+    border-radius: .3rem;
+    background-color:  rgb(248, 214, 182);
+}
+
+.navbars .navbars-nav .drop:hover {
+    padding: .5rem 1rem;
+    background-color:  rgb(240, 240, 240);
+    border-radius: .3rem;
+}
+
+.navbars .navbars-nav .drop:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    transition: .4s ease;
+}
+
+.navbars .navbars-nav .drop ul li {
+    padding: .5rem 1rem;
+}
+
+.navbars .navbars-nav .drop ul li:hover {
+    padding: .5rem 1rem;
+    background-color: rgb(145, 51, 51);
+    border-radius: .3rem;
+}
+
+.navbars .navbars-nav .drop ul li:hover>a {
+    color: white;
+}
+
+.navbars .navbars-nav .drop ul li a {
+    margin: 0;
+    padding: 0;
+    color: rgb(11, 11, 11);
+}
+
+/* Dropdown List CSS */
+/* Navbar CSS */
+
+/* Jumbotron CSS */
+.jb {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+    overflow: hidden;
+    background-color: rgb(73, 73, 73);
+}
+
+.jb::after {
+    position: absolute;
+    transition: 1s all ease;
+    z-index: 2;
+}
+
+.jb .jb-slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 420rem;
+    animation: slider 16s ease-in-out infinite;
+}
+
+.jb .jb-slide img {
+    width: 85rem;
+    height: auto;
+    float: left;
+}
+
+/* Animasi CSS */
+@keyframes slider {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    20% {
+        left: 0;
+        opacity: 1;
+    }
+
+    21% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    25% {
+        left: -85rem;
+        opacity: 1;
+    }
+
+    45% {
+        left: -85rem;
+        opacity: 1;
+    }
+
+    46% {
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 1;
+    }
+
+    50% {
+        left: -170rem;
+        opacity: 1;
+    }
+
+    70% {
+        left: -170rem;
+        opacity: 1;
+    }
+
+    72% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 1;
+    }
+
+    75% {
+        left: -255rem;
+        opacity: 1;
+    }
+
+    95% {
+        left: -255rem;
+        opacity: 1;
+    }
+
+    97% {
+        left: -255rem;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+}
+
+/* Animasi CSS */
+
+.jb .jb-content {
+    margin: 0 5%;
+    padding: 1rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50rem;
+    height: auto;
+    background-color: rgba(248, 214, 182, .8);
+    color: black;
+    border-radius: .3rem;
+    z-index: 2;
+}
+
+.jb .jb-content .arrow button {
+    margin: 0 .5rem;
+    background: none;
+    border: none;
+    border-radius: .3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+}
+
+.jb .jb-content .arrow button:hover {
+    cursor: pointer;
+    color: rgb(183, 21, 86);
+}
+
+.jb .jb-content .jb-main {
+    margin: 0 1rem;
+    padding: .5rem 0;
+    max-width: 40rem;
+}
+
+.jb .jb-content .jb-main h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.jb .jb-content .jb-main p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Jumbotron CSS */
+
+/* Jumbotron Public CSS */
+.jb-public {
+    background-image: url(Images_UTS/back.jpg);
+    background-size: 50%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    background-attachment: fixed;
+}
+
+.jb-public .jb-content {
+    color: white;
+    text-align: center;
+}
+
+.jb-public .jb-content p {
+    font-style: italic;
+}
+
+.jb-public .jb-content p span {
+    color:  rgb(248, 214, 182);
+}
+
+.jb-public .jb-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgb(62, 18, 18);
+}
+
+/* Jumbotron Public CSS */
+
+/* Main CSS */
+.main-body {
+    display: flex;
+}
+
+/* Sidebar CSS */
+.main-body .sidebar-body {
+    min-width: 15rem;
+    max-width: 15rem;
+}
+
+.main-body .sidebar-body .sidebar {
+    padding: .5rem .4rem;
+    height: 100%;
+    background-color:  rgb(248, 214, 182);
+}
+
+.main-body .sidebar-body .sidebar p {
+    padding: .3rem 0;
+    background-color: rgb(62, 18, 18);
+    border-radius: .3rem;
+    color: white;
+    text-align: center;
+}
+
+.main-body .sidebar-body .sidebar .iframe {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-body .sidebar-body .sidebar .iframe iframe {
+    margin: .5rem 0;
+    width: 14rem;
+    height: 20rem;
+    border-radius: .3rem;
+}
+
+.main-body .sidebar-body .sidebar .iframe p {
+    background: none;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo {
+    padding: 2rem 0 0;
+    text-align: center;
+    color: rgb(11, 11, 11);
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .ceo-img {
+    flex: 1 1 13rem;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .ceo-img img {
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .profil-intro h1 {
+    padding: .3rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .profil-intro table {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .profil-intro table tr {
+    margin: 1rem 0;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .profil-intro table tr th {
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.main-body .sidebar-body .sidebar .profil-ceo .profil-intro table tr td {
+    padding: 0 0 0 .3rem;
+    font-size: .8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.main-body .sidebar-body .sidebar .stat {
+    margin: 2rem 0 0;
+    padding: .7rem;
+    border: 2px solid rgb(62, 18, 18);
+    border-radius: .3rem;
+}
+
+.main-body .sidebar-body .sidebar .stat h1 {
+    margin: 0 0 .5rem;
+    padding: 0 0 .5rem;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(62, 18, 18);
+}
+
+/* Sidebar CSS */
+
+/* Content Body CSS */
+.main-body .content-body .intro {
+    padding: 1.5rem 5% 1rem 1rem;
+    text-align: center;
+}
+
+.main-body .content-body .intro h1 {
+    color: rgb(62, 18, 18);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main-body .content-body .intro p {
+    padding: 1rem 0 0;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.main-body .content-body .content {
+    padding: 1rem 5% 1rem 1rem;
+}
+
+.main-body .content-body .content .ct {
+    margin: 1rem 0;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.main-body .content-body .content .ct .content-main {
+    padding: .5rem 0;
+    border-radius: .3rem;
+    box-shadow: 0 0 10px 1px rgb(62, 18, 18);
+}
+
+.main-body .content-body .content .ct .content-main h1 {
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.main-body .content-body .content .ct .content-main p {
+    margin: .5rem .5rem 0;
+    padding: .3rem 0 0;
+    border-top: 2px solid rgb(62, 18, 18);
+    text-align: justify;
+}
+
+.main-body .content-body .content .ct .content-img {
+    margin: 0 .5rem;
+    flex: 1 1 200rem;
+}
+
+.main-body .content-body .content .ct .content-img img {
+    width: 100%;
+    border-radius: .3rem;
+}
+
+/* Content Body CSS */
+
+/* Berita CSS */
+.main-body .berita {
+    padding: 1rem 0;
+}
+
+.main-body .berita .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.main-body .berita .cards-content {
+    padding: 1rem 5% 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cards CSS */
+.main-body .berita .cards-content .cards-berita {
+    margin: 1rem;
+    padding: .5rem;
+    position: relative;
+    max-width: 18rem;
+    box-shadow: 0 0 10px 3px rgb(62, 18, 18);
+    border-radius: .3rem;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-img {
+    flex: 1 1 10rem;
+    margin: 0 0 1rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-img img {
+    /* margin: 0 0 .5rem; */
+    position: center;
+    object-fit: cover;
+    border-radius: .3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.main-body .berita .cards-content .cards-berita span {
+    padding: .2rem .5rem;
+    background-color:  rgb(248, 214, 182);
+    border-radius: .3rem;
+    color: rgb(11, 11, 11);
+}
+
+.main-body .berita .cards-content .cards-berita .ikon-img {
+    margin: -5rem 0 0 12rem;
+    position: absolute;
+    width: 5rem;
+}
+
+.main-body .berita .cards-content .cards-berita .ikon-img img {
+    width: 100%;
+    height: 5rem;
+    border-radius: 100%;
+    border: 1px solid silver;
+    box-shadow: 0 0 20px 2px black;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main {
+    padding: .8rem .5rem 0;
+    text-align: justify;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main h1 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 7.5rem;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    /* Mengganti menjadi ... */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: rgb(62, 18, 18);
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main h1 a {
+    color: rgb(62, 18, 18);
+    text-align: justify;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main h1 a:hover {
+    color: rgb(145, 51, 51);
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main p {
+    border-top: 2px solid rgb(62, 18, 18);
+    padding: .6rem 0 1.4rem;
+    text-align: center;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main .btn {
+    padding: .3rem 0;
+    border-radius: .3rem;
+    font-size: .9rem;
+    color: rgb(62, 18, 18);;
+}
+
+.main-body .berita .cards-content .cards-berita .cards-main .btn:hover {
+    color: rgb(145, 51, 51);
+}
+
+.main-body .berita .cards-content .cards-berita .cards-date {
+    margin: .5rem 0 0;
+    padding: .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid rgb(62, 18, 18);
+    font-size: .8rem;
+}
+
+/* Cards CSS */
+/* Berita CSS */
+/* Main CSS */
+
+/* Profil Page CSS */
+/* Content Profil CSS */
+.profil {
+    padding: 1rem 5%;
+}
+
+.profil h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.profil .profil-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Content Profil CSS */
+/* Profil Page CSS */
+
+/* Visi Misi Page CSS */
+.visimisi {
+    padding: 1rem 5%;
+}
+
+.visimisi .vm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visimisi .vm .visimisi-ct {
+    max-width: 45rem;
+}
+
+.visimisi .vm .visimisi-ct .visi-misi {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.visimisi .vm .visimisi-ct .visi-misi i {
+    font-size: 3rem;
+    color: rgb(62, 18, 18);
+}
+
+.visimisi .vm .visimisi-ct .visi-misi .main {
+    margin: 0 0 0 1rem;
+}
+
+.visimisi .vm .visimisi-ct .visi-misi .main h1 {
+    font-size: 2rem;
+    color: rgb(62, 18, 18);
+    font-weight: 600;
+}
+
+.visimisi .vm .visimisi-ct .visi-misi .main p {
+    padding: .5rem 0 0;
+    text-align: justify;
+}
+
+.visimisi .vm .content-img img {
+    border-radius: .3rem;
+}
+
+.visimisi .nilai-header {
+    display: flex;
+    align-items: center;
+    color: rgb(62, 18, 18);
+}
+
+.visimisi .nilai-header i {
+    font-size: 2.5rem;
+}
+
+.visimisi .nilai-header h1 {
+    margin: 0 0 0 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.visimisi .main {
+    padding: 1rem 2rem;
+}
+
+.visimisi .main h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.visimisi .main p {
+    padding: .5rem 0 0;
+    text-align: justify;
+}
+
+/* Visi Misi Page CSS */
+
+/* Infrastruktur, Layanan, Sumber Daya Page CSS */
+.page {
+    padding: 1rem 5%;
+}
+
+/* PT CSS */
+.page .pt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page .pt .pt-img {
+    min-width: 15rem;
+    text-align: center;
+}
+
+.page .pt .pt-img img {
+    border-radius: .3rem;
+}
+
+.page .pt .main {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.page .pt .main h1 a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.page .pt .main .btn {
+    padding: .3rem 0;
+    border-radius: .3rem;
+    font-size: .9rem;
+    color: rgb(62, 18, 18);;
+}
+
+.page .pt .main .btn:hover {
+    color: rgb(145, 51, 51);
+}
+
+.page .pt .main h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(62, 18, 18);
+}
+
+.page .pt .main p {
+    margin: .5rem 0 0;
+    text-align: justify;
+}
+
+.page .pt .main ul li {
+    padding: 0 0 0 1rem;
+    text-align: justify;
+}
+
+/* PT CSS */
+/* Infrastruktur, Layanan, Sumber Daya Page CSS */
+
+/* Kesehatan, Pengembangan, Tanggung Jawab Page CSS */
+.lanjutan {
+    padding: 1rem 5%;
+}
+
+.lanjutan .ct {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.lanjutan .ct .ct-img {
+    flex: 1 1 100rem;
+}
+
+.lanjutan .ct .ct-img img {
+    min-width: 25rem;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.lanjutan .ct .main {
+    margin: 0 0 0 1rem;
+    text-align: justify;
+}
+
+.lanjutan .sertif-header {
+    color: rgb(62, 18, 18);
+}
+
+.lanjutan .sertif-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.lanjutan .sertif-main {
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.lanjutan .sertif-main img {
+    margin: 1rem;
+    width: 10rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 10px 2px rgb(62, 18, 18);
+}
+
+.lanjutan .kelebihan {
+    padding: .5rem 1rem;
+}
+
+.lanjutan .kelebihan .main {
+    margin: 1rem 0;
+}
+
+.lanjutan .kelebihan .main .header {
+    display: flex;
+    align-items: center;
+    color: rgb(62, 18, 18);
+}
+
+.lanjutan .kelebihan .main .header i {
+    font-size: 2rem;
+}
+
+.lanjutan .kelebihan .main .header h1 {
+    margin: 0 0 0 1rem;
+}
+
+.lanjutan .kelebihan .main .body {
+    margin: .5rem 0 0;
+}
+
+.lanjutan .kelebihan .main .body p {
+    text-align: justify;
+}
+
+.lanjutan .testimoni {
+    padding: 0 .5rem;
+}
+
+.lanjutan .testimoni h1 {
+    padding: 0 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.lanjutan .testimoni .main {
+    display: flex;
+    align-items: center;
+}
+
+.lanjutan .testimoni .main .testi-img {
+    flex: 1 1 80rem;
+}
+
+.lanjutan .testimoni .main .testi-img img {
+    width: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 0 15px 2px rgb(62, 18, 18);
+}
+
+.lanjutan .testimoni .main .testi-main {
+    margin: 0 0 0 1rem;
+}
+
+.lanjutan .testimoni .main .testi-main p {
+    text-align: center;
+}
+
+.lanjutan .testimoni .main .testi-main i p {
+    padding: 2rem 0 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(62, 18, 18);
+}
+
+.lanjutan .testimoni .main .testi-main i .testi-name {
+    padding: 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.lanjutan .main {
+    margin: 1rem 0;
+}
+
+.lanjutan .main .header {
+    display: flex;
+    align-items: center;
+    color: rgb(62, 18, 18);
+}
+
+.lanjutan .main .header i {
+    font-size: 2rem;
+}
+
+.lanjutan .main .header h1 {
+    margin: 0 0 0 1rem;
+}
+
+.lanjutan .main .body {
+    margin: .5rem 0 0;
+}
+
+.lanjutan .main .body p {
+    text-align: justify;
+}
+
+/* Kesehatan, Pengembangan, Tanggung Jawab Page CSS */
+
+/* Berita CSS */
+.berita {
+    padding: 1rem 5%;
+}
+
+.berita .cards-content {
+    padding: 1rem 5% 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cards CSS */
+.berita .cards-content .cards-berita {
+    margin: 1rem;
+    padding: .5rem;
+    position: relative;
+    max-width: 18rem;
+    box-shadow: 0 0 10px 3px rgb(62, 18, 18);
+    border-radius: .3rem;
+}
+
+.berita .cards-content .cards-berita .cards-img {
+    flex: 1 1 10rem;
+    margin: 0 0 1rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.berita .cards-content .cards-berita .cards-img img {
+    /* margin: 0 0 .5rem; */
+    position: center;
+    object-fit: cover;
+    border-radius: .3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.berita .cards-content .cards-berita span {
+    padding: .2rem .5rem;
+    background-color:  rgb(248, 214, 182);
+    border-radius: .3rem;
+    color: rgb(11, 11, 11);
+}
+
+.berita .cards-content .cards-berita .ikon-img {
+    margin: -5rem 0 0 12rem;
+    position: absolute;
+    width: 5rem;
+}
+
+.berita .cards-content .cards-berita .ikon-img img {
+    width: 100%;
+    height: 5rem;
+    border-radius: 100%;
+    border: 1px solid silver;
+    box-shadow: 0 0 20px 2px black;
+}
+
+.berita .cards-content .cards-berita .cards-main {
+    padding: 1rem .5rem;
+    text-align: justify;
+}
+
+.berita .cards-content .cards-berita .cards-main h1 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 7.5rem;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    /* Mengganti menjadi ... */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: rgb(62, 18, 18);
+}
+
+.berita .cards-content .cards-berita .cards-main h1 a {
+    color: rgb(62, 18, 18);
+    text-align: justify;
+}
+
+.berita .cards-content .cards-berita .cards-main h1 a:hover {
+    color: rgb(145, 51, 51);
+}
+
+.berita .cards-content .cards-berita .cards-main p {
+    border-top: 2px solid rgb(62, 18, 18);
+    padding: .6rem 0 1.4rem;
+    text-align: center;
+}
+
+.berita .cards-content .cards-berita .cards-main .btn {
+    padding: .3rem .5rem;
+    border-radius: .3rem;
+    font-size: .9rem;
+    color: rgb(62, 18, 18);
+}
+
+.berita .cards-content .cards-berita .cards-main .btn:hover {
+    color: rgb(145, 51, 51);
+}
+
+.berita .cards-content .cards-berita .cards-date {
+    margin: .5rem 0 0;
+    padding: .5rem 0 0;
+    text-align: center;
+    border-top: 2px solid  rgb(248, 214, 182);
+    font-size: .8rem;
+}
+
+/* .berita .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.berita .pagination a {
+    margin: 0 .5rem;
+    color:  rgb(248, 214, 182);
+}
+
+.berita .pagination a:hover {
+    color: rgb(183, 21, 86);
+} */
+/* Berita CSS */
+
+/* Konten Berita CSS */
+.berita .berita-header {
+    text-align: center;
+}
+
+.berita .berita-header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(62, 18, 18);
+}
+
+.berita .berita-header p {
+    padding: .5rem 0;
+    font-style: italic;
+}
+
+.berita .berita-header p span {
+    color: rgb(62, 18, 18);
+}
+
+.berita .berita-content {
+    padding: 1rem 0 0;
+}
+
+.berita .berita-content .img-center {
+    display: flex;
+    justify-content: center;
+}
+
+.berita .berita-content .img-center .content-img {
+    width: 50rem;
+}
+
+.berita .berita-content .img-center .content-img img {
+    width: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 0 20px 2px rgb(62, 18, 18);
+}
+
+.berita .berita-content .content-main {
+    padding: 1rem 0 .5rem;
+}
+
+.berita .berita-content .content-main p {
+    text-align: justify;
+}
+
+.berita .berita-content .content-main ul li {
+    text-align: justify;
+}
+
+.berita .berita-content .content-main p span {
+    font-weight: 600;
+}
+
+.berita .pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.berita .pagination button {
+    margin: 0 .2rem;
+    background: none;
+    border: none;
+    color: rgb(62, 18, 18);
+}
+
+.berita .pagination button:hover {
+    cursor: pointer;
+    color: rgb(145, 51, 51);
+}
+/* Konten Berita CSS */
+
+/* Kontak CSS */
+.contact {
+    padding: 1.5rem 5% 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact-main {
+    margin: 0 2rem 0 0;
+}
+
+.contact .contact-main .contact-header {
+    display: flex;
+    align-items: center;
+    color: rgb(62, 18, 18);
+}
+
+.contact .contact-main .contact-header i {
+    font-size: 3rem;
+}
+
+.contact .contact-main .contact-header h1 {
+    margin: 0 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact .contact-main .contact-body {
+    margin: 0 1rem 0 0;
+}
+
+.contact .contact-main .contact-body .cont {
+    padding: .5rem 0;
+}
+
+.contact .contact-main .contact-body .cont h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.contact .contact-main .contact-body .cont p {
+    margin: .3rem 0 0 1rem;
+}
+
+.contact .contact-main .contact-body .cont p b {
+    font-weight: 500;
+}
+
+.contact .contact-main .contact-body .cont .btn {
+    padding: .5rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact-main .contact-body .cont .btn a {
+    margin: 0 .2rem;
+    font-size: 1.3rem;
+    color: rgb(62, 18, 18);
+}
+
+.contact .contact-main .contact-body .cont form {
+    padding: 1rem;
+    width: auto;
+    border-radius: .3rem;
+    box-shadow: 0 0 10px 3px rgb(62, 18, 18);
+}
+
+.contact .contact-main .contact-body .cont form .form-pesan {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contact-main .contact-body .cont form input {
+    margin: .5rem 0;
+    padding: .5rem .5rem;
+    width: 100%;
+    color: black;
+}
+
+.contact .contact-main .contact-body .cont form .inp-pesan {
+    height: 3rem;
+}
+
+.contact .contact-main .contact-body .cont form .inp-send {
+    background-color: rgb(62, 18, 18);
+    border: none;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.contact .contact-main .contact-body .cont .btn a:hover {
+    color:  rgb(248, 214, 182);
+}
+
+.contact .embbed-maps iframe {
+    border-radius: .3rem;
+    height: 37rem;
+    box-shadow: 0 0 15px 2px rgb(62, 18, 18);
+}
+/* Kontak CSS */
+
+/* Registrasi CSS */
+.profil .register {
+    padding: 2rem 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profil .register form {
+    padding: 1rem;
+    width: 100%;
+    background-color:  rgb(248, 214, 182);
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.profil .register form .regis-inp input {
+    margin: .2rem 0;
+    padding: .5rem 0;
+    width: 100%;
+    text-align: center;
+    border-radius: .3rem;
+    border: 1px solid rgb(62, 18, 18);
+    color: rgb(62, 18, 18);
+}
+
+.profil .register form .regis-send input {
+    margin: 2rem 0 0;
+    padding: .5rem 1rem;
+    width: 70%;
+    background-color: rgb(62, 18, 18);
+    color: white;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.profil .register form .regis-send input:hover {
+    background-color: rgb(145, 51, 51);
+}
+/* Registrasi CSS */
+
+/* Footer CSS */
+.footer {
+    padding: 1rem 2% 0 1rem;
+    background-color: rgb(39, 39, 39);
+    color: rgb(11, 11, 11);
+}
+
+/* Footer Header CSS */
+.footer .foot-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .foot-head img {
+    width: 5rem;
+    border-radius: .3rem;
+}
+
+.footer .foot-head h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:  rgb(248, 214, 182);
+}
+
+.footer .foot-main {
+    padding: 1rem .5rem .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .foot-main .main {
+    max-width: 20rem;
+}
+
+.footer .foot-main .main p {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.footer .foot-main .main .up-btn {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .foot-main .main .up-btn .up {
+    text-align: center;
+    font-size: 2rem;
+    color:  rgb(248, 214, 182);
+}
+
+.footer .foot-main .main .up:hover {
+    color: rgb(145, 51, 51);
+}
+
+.footer .foot-main .main .main-btn {
+    padding: 1rem 0 0;
+    display: inline-block;
+}
+
+.footer .foot-main .main .main-btn a {
+    margin: 0 .5rem;
+    color:  rgb(248, 214, 182);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer .foot-main .main .main-btn a:hover {
+    color: rgb(145, 51, 51);
+}
+
+.footer .foot-main .main h1 {
+    padding: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color:  rgb(248, 214, 182);
+}
+
+.footer .foot-main .main iframe {
+    padding: 1rem 0 0;
+    width: 20rem;
+    height: 10rem;
+}
+
+.footer .foot-copy {
+    text-align: center;
+}
+
+.footer .foot-copy h1 {
+    padding: .5rem 0;
+    border-top: 2px solid  rgb(248, 214, 182);
+    color:  rgb(248, 214, 182);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.footer .foot-copy h1 a {
+    color:  rgb(248, 214, 182);
+}
+
+.footer .foot-copy h1 a:hover {
+    color: rgb(145, 51, 51);
+}
+
+/* Footer Header CSS */
+/* Footer CSS */
+
+/* Media Queries Responsive */
+/* Tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbars .navbars-nav {
+        padding: 7rem 1rem;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgba(248, 214, 182, .8);
+        width: 15rem;
+        height: 100vh;
+        transition: 0.3s;
+        transform: scaleX(0);
+        z-index: 99;
+    }
+
+    .navbars .navbars-nav.active-nav {
+        right: 0;
+        transform: scaleX(1);
+        transition: 1s ease;
+    }
+
+    .navbars .navbars-nav a {
+        padding: 0;
+        color: #010101;
+        display: block;
+        margin: 1.5rem;
+        padding: 0 5rem;
+        font-size: 2rem;
+    }
+
+    .navbars .navbars-nav .drop {
+        padding: 0 1rem;
+        display: block;
+        text-align: left;
+    }
+
+    .navbars .navbars-nav .aktif {
+        margin: 0;
+    }
+
+    .navbars .navbars-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbars .navbars-nav .drop ul li a:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .navbars .navbars-nav a {
+        margin: 0 1rem;
+        padding: .5rem .1rem;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .navbars .navbars-nav a::after {
+        content: "";
+        padding: .2rem;
+        display: block;
+        border-bottom: 3px solid vrgb(62, 18, 18);
+        transform: scaleX(0);
+        transition: 0.5s;
+        z-index: 2;
+    }
+    
+    .navbars .navbars-nav a:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .navbars .navbars-extra {
+        display: inline-block;
+    }
+
+    .navbars .navbars-extra button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: rgb(62, 18, 18);
+    }
+
+    .navbars .navbars-extra button:hover {
+        cursor: pointer;
+        color: rgb(145, 51, 51);
+    }
+
+    /* Content CSS */
+    .main-body .content-body .content .ct {
+        margin: 2rem;
+        padding: 1rem .5rem;
+        min-width: 20rem;
+        display: block;
+        box-shadow: 0 0 10px 3px rgb(62, 18, 18);
+        border-radius: .3rem;
+    }
+
+    .main-body .content-body .content .ct .content-main {
+        box-shadow: none;
+    }
+
+    .berita .pagination button {
+        font-size: 1rem;
+    }
+
+    .main-body .berita .cards-content .cards-berita {
+        width: 12rem;
+    }
+    
+    .main-body .berita .cards-content .cards-berita .cards-img {
+        height: 8rem;
+    }
+    
+    .main-body .berita .cards-content .cards-berita .cards-main h1 {
+        height: 5.5rem;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        /* Mengganti menjadi ... */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .berita .cards-content .cards-berita {
+        width: 17rem;
+    }
+    
+    .berita .cards-content .cards-berita .cards-img {
+        height: 8rem;
+    }
+    
+    .berita .cards-content .cards-berita .cards-main h1 {
+        height: 5.5rem;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        /* Mengganti menjadi ... */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .berita .berita-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .berita .berita-content .img-center {
+        margin: 3rem;
+        width: 35rem;
+        display: flex;
+        justify-content: center;
+    }
+    /* Content CSS */
+
+    /* Profil CSS */
+    .page {
+        padding: 0;
+    }
+    
+    .page .pt {
+        margin: 2rem 0;
+    }
+    
+    .page .pt .pt-img {
+        margin: 2rem 16.5rem 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 15rem;
+    }
+
+    .page .pt .pt-img img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .page .pt .main {
+        padding: 0 2rem 0 .5rem;
+        line-height: 1.3rem;
+    }
+
+    .page .pt .main h1 {
+        line-height: 3rem;
+    }
+    
+    .page .pt .main ul li {
+        padding: 0 2rem 0;
+        line-height: 1.3rem;
+    }
+
+    /* Visi Misi CSS */
+    .visimisi .vm {
+        display: block;
+    }
+
+    .visimisi .vm .content-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .visimisi .vm .content-img img {
+        width: 20rem;
+    }
+    /* Visi Misi CSS */
+    
+    /* Struktur CSS */
+    .profil .profil-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profil .profil-img img {
+        width: 50rem;
+    }
+    /* Struktur CSS */
+    /* Profil CSS */
+
+    /* Keberlanjutan CSS */
+    .lanjutan .ct {
+        padding: 0 0 2rem;
+        display: block;
+    }
+
+    .lanjutan .ct .ct-img {
+        padding: 0 0 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lanjutan .ct .ct-img img {
+        width: 30rem;
+    }
+
+    .lanjutan .testimoni .main {
+        display: block;
+    }
+
+    .lanjutan .testimoni .main .testi-img {
+        padding: 0 0 1rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lanjutan .testimoni .main .testi-img img {
+        width: 20rem;
+    }
+
+    .lanjutan .sertif-main img {
+        margin: 1rem;
+    }
+    /* Keberlanjutan CSS */
+
+    /* Bisnis Kami CSS */
+    .page .pt {
+        display: block;
+    }
+
+    .page .pt .pt-img {
+        flex: 1 1 30rem;
+    }
+
+    .page .pt .pt-img img {
+        width: 100%;
+    }
+    /* Bisnis Kami CSS */
+
+    /* Gallery CSS */
+    .page .pt-gallery {
+        text-align: center;
+    }
+
+    .page .pt-gallery .gallery-img {
+        margin: 0 0 0 10rem;
+        width: 30rem;
+    }
+    /* Gallery CSS */
+
+    /* Kontak CSS */
+    .contact {
+        display: block;
+    }
+
+    .contact .contact-main .contact-body {
+        text-align: center;
+    }
+
+    .contact .contact-main .contact-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .contact-main .contact-body .pesan {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .contact-main .contact-body .cont .btn {
+        justify-content: center;
+    }
+
+    .contact .contact-main .contact-body form {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .contact .embbed-maps {
+        margin: 1rem 0;
+    }
+
+    .contact .embbed-maps iframe {
+        width: 100%;
+    }
+    /* Kontak CSS */
+
+    /* Registrasi CSS */
+    .profil .register {
+        padding: 2rem;
+    }
+    /* Registrasi CSS */
+
+    /* Footer CSS */
+    .footer .foot-main {
+        display: block;
+    }
+    
+    .footer .foot-main .main {
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+
+    .footer .foot-main .main .up-btn {
+        justify-content: start;
+    }
+
+    .footer .foot-main .main iframe {
+        width: 100%;
+    }
+    /* Footer CSS */
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
