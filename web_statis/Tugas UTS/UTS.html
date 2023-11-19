@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style_UTS.css" />
+    
+    <!-- My Icon -->
+    <script src="https://kit.fontawesome.com/8693e748c0.js" crossorigin="anonymous"></script>
+   
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    
+    <!-- My Favicon -->
+    <link rel="icon" href="Images_UTS/logo.jpeg">
+    
+    <title>Home | UTS Task</title>
+</head>
+<body>
+    <!-- Navbar Start -->
+        <nav class="navbars">
+            <!-- Logo Start -->
+                <div class="navbars-logo">
+                    <a href="UTS.html">
+                        <img src="Images_UTS/logo.jpeg" alt="">
+                    </a>
+                </div>
+            <!-- Logo End -->
+                
+            <!-- Button Navigasi Start -->
+                <div class="navbars-nav">
+                    <a class="aktif" href="UTS.html">Home</a>
+                    <div class="drop">
+                        <a href="#">About ></a>
+                        <ul>
+                            <li><a href="Pages/About/Profil.html">Profil</a></li>
+                            <li><a href="Pages/About/Visi_Misi.html">Visi, Misi, & Nilai</a></li>
+                            <li><a href="Pages/About/Struktur.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop">
+                        <a href="#">Bisnis Kami ></a>
+                        <ul>
+                            <li><a href="Pages/Bisnis_Kami/Infrastruktur.html">Infrastruktur Energi</a></li>
+                            <li><a href="Pages/Bisnis_Kami/Layanan.html">Layanan Energi</a></li>
+                            <li><a href="Pages/Bisnis_Kami/Sumber_Daya.html">Sumber Daya Energi</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop">
+                        <a href="#">Keberlanjutan ></a>
+                        <ul>
+                            <li><a href="Pages/Keberlangsungan/Pengembangan.html">Pengembangan SDM</a></li>
+                            <li><a href="Pages/Keberlangsungan/TanggungJawab.html">Tanggung Jawab Sosial Perusahaan</a></li>
+                        </ul>                    
+                    </div>
+                    <a href="Pages/Galeri.html">Gallery</a>
+                    <a href="Pages/Berita.html">Berita</a>
+                    <a href="Pages/Kontak.html">Contact Us</a>
+                    <a href="Pages/Registrasi.html">Registrasi</a>
+                </div>
+            <!-- Button Navigasi End -->
+
+            <!-- Button Navigasi Extra Start -->
+                <div class="navbars-extra">
+                    <button type="button" id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            <!-- Button Navigasi Extra End -->    
+        </nav>
+    <!-- Navbar End -->
+
+    <!-- Jumbotron Start -->
+        <section class="jb">
+            <div class="jb-slide">
+                <img src="Images_UTS/home1.jpg" alt="">
+                <img src="Images_UTS/home4.jpg" alt="">
+                <img src="Images_UTS/home3.jpg" alt="">
+                <img src="Images_UTS/home5.jpg" alt="">
+            </div>
+            
+            <div class="jb-content">
+                <!-- Panah kiri Start -->
+                    <div class="arrow">
+                        <button type="button" onclick="kiri()"><i class="fa-solid fa-angles-left"></i></button>
+                    </div>
+                <!-- Panah kiri End -->
+
+                <!-- Main Jumbotron Start -->
+                    <div class="jb-main">
+                        <h1>INFRASTRUKTUR ENERGI</h1>
+                        <p>Titan Infra Energy berfokus kepada pengembangan infrastruktur energi mulai dari hulu hingga hilir, mulai dari situs tambang, jalur pengangkutan, Pelabuhan khusus hingga kepada jasa pengangkutan batubara.</p>
+                    </div>
+                <!-- Main Jumbotron End -->
+                
+                <!-- Panah Kanan Start -->
+                    <div class="arrow">
+                        <button type="button" onclick="kanan()"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                <!-- Panah Kanan End -->
+            </div>
+        </section>
+    <!-- Jumbotron End -->
+
+    <!-- Main Start -->
+        <div class="main-body">
+            <!-- Sidebar Start -->
+                <div class="sidebar-body">
+                    <aside class="sidebar">
+                        <!-- Menunjukan Waktu Sekarang dengan menggunakan JavaScript -->
+                        <!-- Real Time Start -->
+                            <p style="color: white;"><span id="timeIs"></span></p>
+                        <!-- Real Time End -->
+
+                        <!-- Embbed Video YT Start -->
+                            <div class="iframe">
+                                <iframe width="1343" height="576" src="https://www.youtube.com/embed/hoReehgjFdI" title="Titan Infra Energy Group Company Profile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <p style="color: black;">Sebagai perusahaan energi terintergrasi yang berkembang pesat di Indonesia, Titan Infra Energy terus bertekad menyatukan sumber daya energi dan layanan infrastruktur ke dalam rantai nilai lengkap untuk menyediakan solusi energi dalam rangka memenuhi kebutuhan nasional dan global</p>
+                            </div>
+                        <!-- Embbed Video YT End -->
+
+                        <!-- Profil CEO Lembaga Start -->
+                            <div class="profil-ceo">
+                                <div class="ceo-img">
+                                    <!-- Masukan Fotomu ke dalam sini -->
+                                    <img src="Images_UTS/Tintan.jpg" alt="">
+                                </div>
+
+                                <div class="profil-intro">
+                                    <h1>Handoko A. Tanuadji</h1>
+                                    <table>
+                                        <tr>
+                                            <th>Tempat, Tanggal Lahir</th>
+                                            <td>:</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Alamat</th>
+                                            <td>:</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Usia</th>
+                                            <td>:</td>
+                                            <td>65 Tahun</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pekerjaan</th>
+                                            <td>:</td>
+                                            <td>Pendiri,Pemilik dan Komisaris Utama Perusahaan</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td>:</td>
+                                            <td>Sudah Menikah</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        <!-- Profil CEO Lembaga End -->
+
+                    </aside>
+                </div>
+            <!-- Sidebar End -->
+
+            <!-- Content Body Start -->
+                <div class="content-body">
+                    <!-- Introduce Start -->
+                        <section class="intro">
+                            <h1>Selamat Datang di Titan Infra Energy</h1>
+                            <p>Sejak berdiri pada 2005 silam, Titan Infra Energy mengembangkan jasa infrastruktur energi terintegrasi mulai dari Infrastruktur dan logistik seperti jalan khusus batubara dan pelabuhan khusus batubara, jasa kontraktor pertambangan dan jasa pengangkutan baik darat maupun air yang terfokus di bagian Selatan Pulau Sumatera, Indonesia. Titan Infra Energy didukung oleh SDM yang berpengalaman luas di bidangnya, dan profesional.</p>
+                        </section>
+                    <!-- Introduce End -->
+                
+                    <!-- Content Start -->
+                        <section class="content">
+                            <!-- Content 1 Start -->
+                                <div class="ct">
+                                    <div class="content-main">
+                                        <h1>Infrastruktur Energi</h1>
+                                        <p>Titan Infra Energy berfokus kepada pengembangan infrastruktur energi  mulai dari hulu hingga hilir, mulai dari situs tambang, jalur pengangkutan, Pelabuhan khusus hingga kepada jasa pengangkutan batubara.</p>
+                                    </div>
+                    
+                                    <div class="content-img">
+                                        <img src="Images_UTS/home1.jpg" alt="">
+                                    </div>
+                                </div>
+                            <!-- Content 1 End -->
+                                <br>
+                            <!-- Content 2 Start -->
+                                <div class="ct">
+                                    <div class="content-img">
+                                        <img src="Images_UTS/home2.jpg" alt="">
+                                    </div>
+                    
+                                    <div class="content-main">
+                                        <h1>Jasa Layanan Energi</h1>
+                                        <p>Titan Infra Energy beroperasi di wilayah selatan Pulau Sumatera memberikan layanan terintegrasi dalam pengembangan energi di Indonesia mulai dari jasa pertambangan batubara, infrastruktur logistik dan jasa pengangkutan baik darat maupun air.</p>
+                                    </div>
+                                </div>
+                            <!-- Content 2 End -->
+                                <br>
+                            <!-- Content 3 Start -->
+                                <div class="ct">
+                                    <div class="content-main">
+                                        <h1>Sumber Daya Energi</h1>
+                                        <p>Sebagai penyedia layanan energi yang terintegrasi, Titan Infra Energy mengoperasikan dua tambang batubara untuk mendukung ketahanan energi nasional maupun internasional.</p>
+                                    </div>
+                                    
+                                    <div class="content-img">
+                                        <img src="Images_UTS/home3.jpg" alt="home3">
+                                    </div>
+                                </div>
+                            <!-- Content 3 End -->
+                        </section>
+                    <!-- Content End -->
+                        <br>
+                        <br>
+                    <!-- Berita Start -->
+                        <section class="berita">
+                            <!-- Title Berita Start -->
+                                <h1 class="title">Berita Terkini</h1>
+                            <!-- Title Berita End -->
+                
+                            <!-- Cards Content Start -->
+                                <div class="cards-content">
+                                    <!-- Cards 1 -->
+                                    <div class="cards-berita">
+                                        <!-- Cards Img Start -->
+                                            <div class="cards-img">
+                                                <img src="Images_UTS/card1.png" alt="">
+                                            </div>
+                                            <span>BATUBARA</span>
+                                        <!-- Cards Img End -->
+                                        
+                                        <!-- Cards Main Start -->
+                                            <div class="cards-main">
+                                                <h1><a href="Pages/Berita/Berita_1.html">Mengoptimalkan Transportasi Batu Bara di Sumatera Selatan dengan Jalan Tol Khusus</a></h1>
+                                                <p>Dalam dunia pertambangan batu bara di Sumatera Selatan, PT Servo Lintas Raya (SLR) dan jalan tol khusus batu bara...</p>
+                                                <a class="btn" href="Pages/Berita/Berita_1.html">SELENGKAPNYA >></a>
+                                            </div>
+                                        <!-- Cards Main End -->
+                        
+                                        <!-- Cards Date Start -->
+                                            <div class="cards-date">
+                                                <p>06/11/2023</p>
+                                            </div>
+                                        <!-- Cards Date End -->
+                                    </div>
+                                    
+                                    <!-- Cards 2 -->
+                                    <div class="cards-berita">
+                                        <!-- Cards Img Start -->
+                                            <div class="cards-img">
+                                                <img src="Images_UTS/card2.jpg" alt="">
+                                            </div>
+                                            <span>BERITA</span>
+                                        <!-- Cards Img End -->
+                                        
+                                        <!-- Cards Main Start -->
+                                            <div class="cards-main">
+                                                <h1><a href="Pages/Berita/Berita_2.html">PT Servo Lintas Raya (Titan Group) Optimis Kapalkann 18 Juta Ton Batu Bara Lahat dan Muara Enim</a></h1>
+                                                <p>Tahun ini, PT Servo Lintas Raya (SLR) yang bertindak sebagai operator “jalan tol” khusus untuk angkutan batu bara di...</p>
+                                                <a class="btn" href="Pages/Berita/Berita_2.html">SELENGKAPNYA >></a>
+                                            </div>
+                                        <!-- Cards Main End -->
+                        
+                                        <!-- Cards Date Start -->
+                                            <div class="cards-date">
+                                                <p>07/11/2023</p>
+                                            </div>
+                                        <!-- Cards Date End -->
+                                    </div>
+                                    
+                                    <!-- Cards 3 -->
+                                    <div class="cards-berita">
+                                        <!-- Cards Img Start -->
+                                            <div class="cards-img">
+                                                <img src="Images_UTS/card3.png" alt="">
+                                            </div>
+                                            <span>BERITA</span>
+                                        <!-- Cards Img End -->
+                                        
+                                        <!-- Cards Main Start -->
+                                            <div class="cards-main">
+                                                <h1><a href="Pages/Berita/Berita_3.html">Penanganan Insiden Dump Truck di Pelabuhan Swarnadwipa Dermaga Jaya Telah Dilakukan dengan Cepat dan Efektif</a></h1>
+                                                <p>Insiden tergelincirnya dump truck di Pelabuhan Swarnadwipa Dermaga Jaya (SDJ) pada 30 Oktober 2023 merupakan...</p>
+                                                <a class="btn" href="Pages/Berita/Berita_3.html">SELENGKAPNYA >></a>
+                                            </div>
+                                        <!-- Cards Main End -->
+                        
+                                        <!-- Cards Date Start -->
+                                            <div class="cards-date">
+                                                <p>08/11/2023</p>
+                                            </div>
+                                        <!-- Cards Date End -->
+                                    </div>
+                                </div>
+
+                                <!-- Pagination Start -->
+                                    <div class="pagination">
+                                        <button style="display: flex; align-items: center;" type="button" onclick="berita1()"><i class="fa-solid fa-circle-arrow-left"></i> &nbsp; <label for="">Sebelumnya</label></button>
+                                        <button type="button" onclick="berita1()">1</button>
+                                        <button type="button" onclick="berita()">2</button>
+                                        <button style="display: flex; align-items: center;" type="button" onclick="berita()"><label for="">Selanjutnya</label> &nbsp; <i class="fa-solid fa-circle-arrow-right"></i></button>
+                                    </div>
+                                <!-- Pagination End -->
+                            <!-- Cards Content End -->
+                        </section>
+                    <!-- Berita End -->
+                
+                    <!-- Footer Start -->
+                        <footer class="footer">
+                            <!-- Footer Header Start -->
+                                <div class="foot-head">
+                                    <!-- Logo Start -->
+                                        <img src="Images_UTS/logo.jpeg" alt="">
+                                    <!-- Logo End -->
+
+                                    <!-- Footer Title Start -->
+                                        <h1>Contact Us</h1>
+                                    <!-- Footer Title End -->
+
+                                    <!-- Element Bantuan -->
+                                        <div></div>
+                                    <!-- Element Bantuan -->
+                                </div>
+                            <!-- Footer Header End -->
+
+                            <!-- Footer Main Start -->
+                                <div class="foot-main">
+                                    <div class="main">
+                                        <h1>Profil :</h1>
+                                        <p>Titan Infra Energy merupakan salah satu perusahaan infrastruktur dan logistik energi yang berkembang pesat di Indonesia. Berdiri sejak 2005 silam, Titan Infra Energy mengelola dan mengembangkan sejumlah lini bisnis mulai penambangan batubara, pengelolaan infrastruktur hingga logistik.</p>
+                                        <div class="main-btn">
+                                            <a href="https://www.facebook.com/TitanInfraEnergy/"><i class="fab fa-facebook fa-xl"></i> </a>
+                                            <a href="https://www.youtube.com/@titaninfraenergy"><i class="fab fa-youtube fa-xl"></i> </a>
+                                            <a href="https://www.linkedin.com/company/titaninfraenergy"><i class="fab fa-linkedin fa-xl"></i> </a>
+                                            <a href="https://www.instagram.com/titaninfraenergy/"><i class="fab fa-instagram fa-xl"></i> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main">
+                                        <h1>Telepon :</h1>
+                                        <p>+62 (21) 80636888</p>
+                                        <div class="up-btn">
+                                            <a class="up" href="#" target="_top"><i class="fa-solid fa-arrow-up"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main">
+                                        <h1>Email :</h1>
+                                        <p>info@titaninfra.com</p>
+                                    </div>
+
+                                    <div class="main">
+                                        <h1>Alamat :</h1>
+                                        <p>
+                                            Graha Anabatic,
+                                            Jl. Scientia Boulevard Kav. U2,
+                                            Summarecon Serpong,
+                                            Tangerang, Banten 15811 – Indonesia
+                                        </p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0089006423545!2d106.6172405!3d-6.262556899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fdf8d2377c65%3A0x1706339f424bfef9!2sPT%20Titan%20Infra%20Energy!5e0!3m2!1sid!2sid!4v1699276279747!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            <!-- Footer Main End -->
+
+                            <!-- Footer Copyright Start -->
+                                <div class="foot-copy">
+                                    <h1>&copy; Copyright 2023 Desain by Evita Lutfiani | <a href="https://www.titaninfra.com/">Titan Infra Energy</a></h1>
+                                </div>
+                            <!-- Footer Copyright End -->
+                        </footer>
+                    <!-- Footer End -->
+                </div>
+            <!-- Content Body End -->
+        </div>
+    <!-- Main End -->
+    
+    <!-- My JavaScript -->
+    <script src="script_UTS.js"></script>
+</body>
+</html>
